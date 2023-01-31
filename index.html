@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">  
+        <title>Códice encriptador</title>
+        <link  rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script defer src="assets/js/encriptador.js" ></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>  
+            <h1 class="logo-alura">
+                <img src="assets/img/logo-alura.png" alt="Logotipo de Alura">
+            </h1>
+            
+            <h2>C-3PO Encriptador</h2> 
+        </header>
+    
+        <div id="advertencia">   
+            <div class="advertencia1"><img class="imagenAdvertencia" src="assets/img/alerta.png" alt="Advertencia">Recuerda que las letras minúsculas, acentos y caráctéres especiales no están permitidos</div>
+            
+            <div class="advertencia2"><button onclick="ConvetirTexto()" class="btn-ConvetirTexto" id="id-btn-ConvetirTexto">Convertir texto</button></div>
+            
+        </div>        
+
+        <div class="imagenClon2">                       
+            <figure>
+                <img onclick="copyToClipboard2()" class="imagenClon" src="assets/img/clon.png" alt="Copiar">
+                <figcaption>Clonar respuesta en portapapeles</figcaption>
+            </figure>                    
+        </div>
+
+
+        <div class="texto-entrada">
+            <textarea autofocus  onkeyup ="alertando()" id="id_entrada" name="name_entrada" rows="5" cols="50" placeholder="Soy C-3PO relaciones cibernéticas humanas, ¿En qué puedo servirle?"></textarea>
+        </div>
+
+        <div class="botones-encriptador">            
+            <button onclick="encriptar()" class="btn-encriptar" id="id-btn-encriptar">Encriptar</button>
+            <button onclick="desencriptar()" class="btn-desencriptar" id="id-btn-desencriptar">Desencriptar</button>                    
+        </div>
+        
+        <div class="imagenClon1">            
+            <figure>
+                <img onclick="copyToClipboard()" class="imagenClon" src="assets/img/clon.png" alt="Copiar">
+                <figcaption>Clonar texto en portapapeles</figcaption>
+            </figure>                    
+        </div>
+
+        <div class="texto-salida">
+            <textarea disabled id="id_salida" name="name_salida" rows="5" cols="50"></textarea>
+            <div class="notFound" id="notFound">
+                <img src="assets/img/not-found.png">
+                <p><b>Lo lamento amo Anakin, no encontré información valida para procesar</b></p>
+                <p>Recuerda que deben ser letras minúsculas, sin acentos ni signos de puntuación</p>
+            </div>           
+        </div>
+    </body>
+
+    <footer>
+        <p>Desarrollado por <strong>proSaul96</strong></p>
+        <p>saulsanchezsalinas96@gmail.com</p>
+        <p>&copy Copyright 2023</p>
+    </footer>
+
+</html>            

@@ -1,0 +1,178 @@
+footer{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .productos, .productos li{
+        width: auto;        
+        display:inline-block;       
+    }    
+}
+
+
+.texto-entrada{
+    padding: 0em 5em 1em 5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.texto-salida{
+    padding: 0em 5em 1em 5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-encriptar{
+    background-image:url('../img/redSaber.png');
+    background-repeat:no-repeat;
+    height:15%;
+    width:20%;
+    background-position:center;
+    font-size: larger;
+    background-size: cover;
+    border-radius: 10%;
+    border-style: hidden;
+}
+
+.btn-desencriptar{
+    background-image:url('../img/blueSaber.png');
+    background-repeat:no-repeat;
+    height:15%;
+    width:20%;
+    background-position:center;
+    font-size: larger;
+    background-size: cover;
+    border-radius: 10%;
+    border-style: hidden;
+}
+
+.btn-ConvetirTexto{
+    background-image:url('../img/greenSaber.png');
+    background-repeat:no-repeat;
+    height:15%;
+    width:20%;
+    background-position:center;
+    font-size: larger;
+    background-size: cover;
+    border-radius: 10%;
+    border-style: hidden;
+}
+
+.imagenClon{
+    width: 20%;
+    bottom: 12em;
+    right: 5em;
+}
+
+textarea {
+    background-image: url('../img/lightSpeed1.jpg');
+    background-size: cover;
+    border: none;
+    opacity: 0.6;
+    font-size:32pt;
+    color: #f9e91b;
+    width:50%;
+    resize: none;
+  }
+
+/*  ***     PAGINA CHALLEGNE     *** */
+.imagenAdvertencia{
+    width: 2%; 
+    transition: 2s;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+  .botones-encriptador {
+    display: flex;
+  }
+
+  .botones-encriptador button{    
+    margin: 0em 3em 0em 3em;
+  }
+
+
+  /* Invisible texto */
+figcaption {
+    position: relative;
+    bottom: 1em;
+    color: #f9e91b;
+
+    display:none; 
+    transition: all .5s;
+}
+
+  /* Visible texto */
+figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
+}
+
+header{
+    display: flex;
+}
+
+header{
+    font-size: 40pt;
+    vertical-align: center;
+}
+
+h2{   
+    padding-top: 2%; 
+    padding-left: 40%;
+    color: #f9e91b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#advertencia p, .notFound p{   
+    color: #f9e91b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.notFound img{
+        width: 30%;
+        padding-left: 5%;
+}
+
+.notFound{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.advertencia1{
+    float: left;
+    color: #f9e91b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagenClon1{
+    display: inline-block;
+}
+
+.imagenClon2{
+    display: inline-block;
+}
